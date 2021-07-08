@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--FILE HEADER COMMENT-->
+<!--FILE            : colours.xml-->
+<!--PROJECT         : A-01 : Mobile App Party Planner - OnlyPlans (PROG3150)-->
+<!--FIRST VERSION   : 2021-02-13 (Rev.01)-->
+<!--AUTHORS         : Group 9 - Dusan Sasic, Devin Caron, Cole Spehar, Kevin Downer-->
+<!--DESCRIPTION     : Available colours in overall Theme setup.-->
+
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#4baeea</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

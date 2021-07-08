@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--FILE HEADER COMMENT-->
+<!--FILE            : activity_guest.xml-->
+<!--PROJECT         : A-02 : Mobile App Party Planner - OnlyPlans (PROG3150)-->
+<!--FIRST VERSION   : 2021-02-13 (Rev.01)-->
+<!--AUTHORS         : Group 9 - Dusan Sasic, Devin Caron, Cole Spehar, Kevin Downer-->
+<!--DESCRIPTION     : Guest option to see the list of available parties.-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Guest"
+    android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lst_parties"
+            style="@style/myTextStyle.CairoSB"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="32dp"
+            android:layout_weight="10"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:textAlignment="center">
+
+                <Button
+                    android:id="@+id/btnContacts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONTACTS"
+                    android:layout_weight="1"
+                    android:layout_margin="15dp"/>
+
+                <Button
+                    android:id="@+id/btn_google"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="15dp"
+                    android:text="MAP"
+                    app:backgroundTint="#4BADE9" />
+
+        </LinearLayout>
+</LinearLayout>

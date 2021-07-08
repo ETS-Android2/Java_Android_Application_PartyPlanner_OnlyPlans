@@ -1,0 +1,45 @@
+<!--FILE HEADER COMMENT-->
+<!--FILE            : strings.xml-->
+<!--PROJECT         : A-01 : Mobile App Party Planner - OnlyPlans (PROG3150)-->
+<!--FIRST VERSION   : 2021-02-13 (Rev.01)-->
+<!--AUTHORS         : Group 9 - Dusan Sasic, Devin Caron, Cole Spehar, Kevin Downer-->
+<!--DESCRIPTION     : String arrays required by application (item selection, host choices).-->
+
+<resources>
+    <string name="app_name">OnlyPlans</string>
+
+    <string-array name="numbers">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+        <item>100</item>
+        <item>125</item>
+        <item>150</item>
+        <item>200</item>
+        <item>300</item>
+    </string-array>
+
+    <string name="drinksAlc">Alcoholic</string>
+    <string name="drinksNonAlc">Non-Alcoholic</string>
+    <string name="checkBox">Whisky</string>
+    <string name="checkBox2">Vodka</string>
+    <string name="checkBox3">Beer</string>
+    <string name="checkBox4">Wine</string>
+    <string name="checkBox5">Pop</string>
+    <string name="checkBox6">Juice</string>
+    <string name="checkBox7">Water</string>
+    <string name="checkBox8">Soda</string>
+    <string name="submitDrinks">Submit</string>
+    <string name="clearDrinks">Clear</string>
+</resources>

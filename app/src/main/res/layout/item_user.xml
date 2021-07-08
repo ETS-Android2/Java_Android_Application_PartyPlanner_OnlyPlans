@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--FILE HEADER COMMENT-->
+<!--FILE            : activity_user.xml-->
+<!--PROJECT         : A-02 : Mobile App Party Planner - OnlyPlans (PROG3150)-->
+<!--FIRST VERSION   : 2021-02-13 (Rev.01)-->
+<!--AUTHORS         : Group 9 - Dusan Sasic, Devin Caron, Cole Spehar, Kevin Downer-->
+<!--DESCRIPTION     : Displays party hat images and other fetch details for the listview-->
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgList"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="8dp"
+            android:src="@android:color/background_dark"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    style="@style/myTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:layout_margin="8dp"/>
+
+                <TextView
+                    android:id="@+id/tvEntryFee"
+                    style="@style/myTextStyle.CairoSB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+
+</LinearLayout>

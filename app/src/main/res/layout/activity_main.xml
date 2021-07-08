@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--FILE HEADER COMMENT-->
+<!--FILE            : activity_main.xml-->
+<!--PROJECT         : A-02 : Mobile App Party Planner - OnlyPlans (PROG3150)-->
+<!--FIRST VERSION   : 2021-02-13 (Rev.01)-->
+<!--AUTHORS         : Group 9 - Dusan Sasic, Devin Caron, Cole Spehar, Kevin Downer-->
+<!--DESCRIPTION     : Main program activity.  User starts here on app startup.-->
+
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:src="@drawable/logo"/>
+
+    <Button
+        android:id="@+id/btn_host"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text="HOST"
+        app:backgroundTint="#4BADE9"/>
+
+
+
+    <Button
+        android:id="@+id/btn_guest"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text="GUEST"
+        app:backgroundTint="#4BADE9"/>
+
+    <Button
+        android:id="@+id/btn_reservation"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:layout_weight="1"
+        android:text="RESERVATIONS"
+        app:backgroundTint="#4BADE9"/>
+
+    <TextView
+        android:id="@+id/txt_debug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+</LinearLayout>

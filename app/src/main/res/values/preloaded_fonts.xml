@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--FILE HEADER COMMENT-->
+<!--FILE            : preloaded_fonts.xml-->
+<!--PROJECT         : A-01 : Mobile App Party Planner - OnlyPlans (PROG3150)-->
+<!--FIRST VERSION   : 2021-02-13 (Rev.01)-->
+<!--AUTHORS         : Group 9 - Dusan Sasic, Devin Caron, Cole Spehar, Kevin Downer-->
+<!--DESCRIPTION     : Custom Cairo Theme font variations.-->
+
+<resources>
+    <!--Custom Cairo Font options for Theme look-->
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/cairo</item>
+        <item>@font/cairo_black</item>
+        <item>@font/cairo_bold</item>
+        <item>@font/cairo_extralight</item>
+        <item>@font/cairo_light</item>
+        <item>@font/cairo_semibold</item>
+    </array>
+</resources>

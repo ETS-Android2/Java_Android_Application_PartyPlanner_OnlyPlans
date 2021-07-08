@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--FILE HEADER COMMENT:-->
+<!--FILE            : activity_create_party.xml-->
+<!--PROJECT         : A-02 : Mobile App Party Planner - OnlyPlans (PROG3150)-->
+<!--FIRST VERSION   : 2021-02-13 (Rev.01)-->
+<!--AUTHORS         : Group 9 - Dusan Sasic, Devin Caron, Cole Spehar, Kevin Downer-->
+<!--DESCRIPTION     : Main program entry point.  The User can either be a Host and-->
+<!--create a party.  They are able to choose optional details and-->
+<!--information to show to the potential guests, or be a Guest and-->
+<!--view a list of existing parties.  They can select and join a party-->
+<!--(with optional friends attending), using a unique code provided-->
+<!--by the Host.-->
+
+<ScrollView
+    style="@style/myTextStyle"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateParty"
+    android:layout_gravity="center"
+    android:padding="16dp"
+    >
+
+<LinearLayout
+    style="@style/myTextStyle"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/cardview_default_elevation"
+    tools:context=".CreateParty">
+
+    <EditText
+        android:id="@+id/etxt_name"
+        style="@style/myTextStyle.CairoSB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Party Name"
+        android:singleLine="true"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/etxt_address"
+        style="@style/myTextStyle.CairoSB"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:hint="Enter Address"
+        android:singleLine="true"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textAlignment="center">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="90dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/People"
+            style="@style/myTextStyle.CairoSB"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Max Guests"
+            android:singleLine="true"
+            android:textAlignment="viewStart"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etxt_date"
+        style="@style/myTextStyle.CairoSB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Party Date"
+        android:singleLine="true"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/etxt_time"
+        style="@style/myTextStyle.CairoSB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Party Time"
+        android:singleLine="true"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textViewPrice"
+        style="@style/myTextStyle.CairoSB"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Entry Fee: $0"
+        android:textAlignment="center" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            style="@style/myTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/myTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="@string/drinksNonAlc"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox5"
+                style="@style/myTextStyle.CairoSB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkBox5" />
+
+            <CheckBox
+                android:id="@+id/checkBox6"
+                style="@style/myTextStyle.CairoSB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkBox6" />
+
+            <CheckBox
+                android:id="@+id/checkBox7"
+                style="@style/myTextStyle.CairoSB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkBox7" />
+
+            <CheckBox
+                android:id="@+id/checkBox8"
+                style="@style/myTextStyle.CairoSB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkBox8" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/myTextStyle"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/myTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="@string/drinksAlc"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                style="@style/myTextStyle.CairoSB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkBox" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                style="@style/myTextStyle.CairoSB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkBox2" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                style="@style/myTextStyle.CairoSB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkBox3" />
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                style="@style/myTextStyle.CairoSB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkBox4" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="16dp">
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/submitDrinks"
+        android:layout_marginRight="8dp"/>
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/clearDrinks"
+        android:layout_marginLeft="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>
