@@ -2,7 +2,6 @@
  Android Phone Application (Java) with Android Studio
 
 Description:
-(PROG3150_MobileApplicationDevelopment Final Project)
 The application will allow a user to act as a host, creating a party with various details, or as a guest, intending to join a party (with guests). Various options are presented to fulfill both expectations for the user.
 
 Elements:
