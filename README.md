@@ -1,5 +1,5 @@
 # Android Application Party Planner “OnlyPlans”
- Android Phone Application (Java)
+ Android Phone Application (Java) with Android Studio
 
 Description:
 The application will allow a user to act as a host, creating a party with various details, or as a guest, intending to join a party (with guests). Various options are presented to fulfill both expectations for the user.
