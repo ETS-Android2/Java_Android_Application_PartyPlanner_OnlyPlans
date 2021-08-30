@@ -11,5 +11,4 @@ asynchronous chained activities.
 Further Additions:
 Service to notify the device when a new party is created,, that when clicked, redirects them to view the party, contacts display page that integrates the user’s phone contacts (with permissions), implemented widget that displays, and brings them to the party page when clicked, google map that displays the user’s current after getting location.
 
-Animated Demo Preview:
 ![Android Pary Planner Demo](demo/android_PartyPlanner_demo.gif)
